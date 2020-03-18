@@ -5,7 +5,7 @@ the ls command is actually a list directory of contents, and the grep command is
 
 and example command of this would be:
 ```
-Ls(1) -1 | grep(1) <file>
+Ls | grep <file>
 ```
 ## PIPE
 a pipe is a form of redirection (transfer of standard output to some other destination) that is used in linux and other Unix like operating systems to send the output of one command/program/process to another command/program/process for further processing.
