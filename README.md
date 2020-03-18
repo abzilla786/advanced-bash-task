@@ -40,25 +40,29 @@ this will put the process into the background and return the PID thanks to the &
 ## Searching for the process
 now to search we can use two commands
 
-```ps aux | GREP <pid>
+```
+ps aux | GREP <pid>
 ```
 this will show you all processes that are running with the value of the pid as it will contain the value somewhere within their string.
 
 so therefore using the command
-``` jobs
+```
+jobs
 ```
 can be more effective as it will specifically show processes that are running in the background along with their status eg. running, done etc
 
 ## Kill it
 now to kill the process we need to use the simple command
-``` kill <pid>
+```
+kill <pid>
 ```
 this will specifically look for the pid and kill any process running under the pid specified.
 
 ## capture the output using STDOUT and pip it into a file (write it into a text file)
  to capture the output using STDOUT we can use
 
- ```ps aux | grep <pid> >> stdout.txt
+ ```
+ ps aux | grep <pid> >> stdout.txt
  ```
 this will pipe the output into a text file using stdout and can be accessed for viewing by using
 ```
